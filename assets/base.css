@@ -1768,7 +1768,7 @@ input[type='checkbox'] {
   grid-template-areas: 'left-icon heading icons';
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
-  background: linear-gradient(270deg, #003c5b 0%, #003c5b 6%, #217ba1 96%);
+  background-color: transparent;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
