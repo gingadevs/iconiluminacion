@@ -1755,7 +1755,7 @@ input[type='checkbox'] {
 .header-wrapper {
   display: block;
   position: relative;
-  background-color: rgb(var(--color-background));
+  background:linear-gradient(270deg,#003c5b 0,#003c5b 6%,#217ba1 96%);
   text-align: center;
 }
 
