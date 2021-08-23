@@ -1756,6 +1756,7 @@ input[type='checkbox'] {
   display: block;
   position: relative;
   background-color: rgb(var(--color-background));
+  text-align: center;
 }
 
 .header-wrapper--border-bottom {
