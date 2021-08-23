@@ -1,10 +1,9 @@
 {
   "sections": {
-    "image_banner": {
+    "162974455442c609fa": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/H1.png",
-        "image_2": "shopify:\/\/shop_images\/H3.png",
+        "image": "shopify:\/\/shop_images\/H2.png",
         "desktop_text_box_position": "center",
         "color_scheme": "background-1",
         "stack_images_on_mobile": true,
@@ -17,29 +16,20 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "Nosotro",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
+            "text": "<p>Asesoramos, diseñamos y ejecutamos proyectos personalizados de <br\/>iluminación en viviendas, hoteles, tiendas, oficinas, edificios y <br\/>exteriores.<\/p>"
           }
         }
       },
       "block_order": [
         "heading",
-        "text",
-        "button"
+        "text"
       ],
       "settings": {
         "color_scheme": "background-1",
@@ -102,19 +92,19 @@
         "column3"
       ],
       "settings": {
-        "title": "Multicolumn",
-        "image_width": "full",
+        "title": "",
+        "image_width": "third",
         "image_ratio": "adapt",
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "Button label",
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
         "button_link": "",
         "swipe_on_mobile": false
       }
     }
   },
   "order": [
-    "image_banner",
+    "162974455442c609fa",
     "rich_text",
     "featured_products",
     "video",
