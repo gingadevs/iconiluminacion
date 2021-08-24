@@ -85,6 +85,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   align-content: space-between;
   overflow-y: auto;
   height: 100%;
+  background: linear-gradient(270deg,#003c5b 0,#003c5b 6%,#217ba1 96%);
 }
 
 .menu-drawer__navigation {
