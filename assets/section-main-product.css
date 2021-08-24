@@ -311,7 +311,7 @@ a.product__text {
 .product--no-media .product__view-details,
 .product--no-media .store-availability-container,
 .product--no-media .product-form {
-  display: flex;
+  
   align-items: center;
   justify-content: center;
   text-align: center;
