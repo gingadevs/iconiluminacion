@@ -84,8 +84,8 @@
         
         
           {%- when 'price' -%}
-        	{%- if 'price__regular' == 0 -%}
-              <style> display:none; </style>
+        	{%- if price.name  == 0 -%}
+        		<style> display:none; </style>
              {%- else -%}
             <div class="no-js-hidden" id="price-{{ section.id }}" {{ block.shopify_attributes }}>
               {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
