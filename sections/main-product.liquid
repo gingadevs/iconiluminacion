@@ -84,7 +84,7 @@
         
         
           {%- when 'price' -%}
-        	{%- if 'price' == 0 -%}
+        	{%- if 'price__regular' == 0 -%}
               <style> display:none; </style>
              {%- else -%}
             <div class="no-js-hidden" id="price-{{ section.id }}" {{ block.shopify_attributes }}>
