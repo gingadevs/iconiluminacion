@@ -96,6 +96,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
+  background: linear-gradient(270deg,#003c5b 0,#003c5b 6%,#217ba1 96%);
 }
 
 .no-js .menu-drawer__navigation {
