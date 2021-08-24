@@ -315,6 +315,7 @@ a.product__text {
   align-items: center;
   justify-content: center;
   text-align: center;
+  display: none;
 }
 
 .product--no-media .product-form > .form {
