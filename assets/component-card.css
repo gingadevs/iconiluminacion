@@ -168,7 +168,7 @@
   text-align: center;
   font-family: 'Helvetica Neue';
   font-size: 14px;
-  font-weight: 200; 
+  font-weight: 200; /* Cambio realizado 24Ago */
 } 
 
 .card-information__wrapper {
