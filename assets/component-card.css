@@ -225,6 +225,7 @@
   flex-wrap: wrap;
   left: 1rem;
   position: absolute;
+  display:none; /* Cambio realizado 24Ago */
 }
 
 .card__badge > * {
