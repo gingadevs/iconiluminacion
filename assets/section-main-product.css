@@ -272,6 +272,7 @@ a.product__text {
   color: rgb(var(--color-background));
   padding: 1rem 1.6rem 0 0.6rem;
   border: none;
+  display: none; /*Cambio realizado 24 Agosto*/
 }
 
 .product .price--sold-out .price__badge-sale {
