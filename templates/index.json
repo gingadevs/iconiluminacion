@@ -185,6 +185,12 @@
         "description": "Icon Iluminación",
         "full_width": false
       }
+    },
+    "1657559603c142d2ff": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"text\">\n    <div class=\"inner-text\">\n      <h3 data-ix=\"slowfade-scroll-bigs\">Iluminación<\/h3>\n      <i class=\"ic ion-fork\"><\/i>\n      <div class=\"text-box\">\n        <h5 data-ix=\"slowfade-scroll-bigs\">genialidea<\/h5>\n        <p data-ix=\"slowfade-scroll-bigs\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, modi!<\/p>\n      <\/div>\n    <\/div>\n     <div class=\"inner-text\">\n      <h3 data-ix=\"slowfade-scroll-bigs\">Proyectos luminicos<\/h3>\n      <i class=\"ic ion-knife\"><\/i>\n      <div class=\"text-box\">\n        <h5 data-ix=\"slowfade-scroll-bigs\">s<\/h5>\n        <p data-ix=\"slowfade-scroll-bigs\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, modi!<\/p>\n      <\/div>\n    <\/div>\n    <div class=\"inner-text\">\n      <h3 data-ix=\"slowfade-scroll-bigs\">Iconnect<\/h3>\n      <i class=\"ic ion-spoon\"><\/i>\n      <div class=\"text-box\">\n        <h5 data-ix=\"slowfade-scroll-bigs\">genialidea<\/h5>\n        <p data-ix=\"slowfade-scroll-bigs\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, modi!<\/p>\n      <\/div>\n    <\/div>"
+      }
     }
   },
   "order": [
@@ -194,6 +200,7 @@
     "16575589032603d604",
     "1657555432da320a65",
     "165755941147b9b1fd",
-    "video"
+    "video",
+    "1657559603c142d2ff"
   ]
 }
