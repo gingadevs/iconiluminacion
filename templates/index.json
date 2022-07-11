@@ -129,7 +129,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/pexels-viento-wang-1126754.jpg",
-        "height": "adapt",
+        "height": "small",
         "color_scheme": "background-1",
         "layout": "text_first"
       }
@@ -165,7 +165,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/pexels-max-vakhtbovych-6969824.jpg",
-        "height": "adapt",
+        "height": "small",
         "color_scheme": "background-1",
         "layout": "image_first"
       }
