@@ -3,7 +3,7 @@
     "16572074668ade563d": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<script src=\"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/jquery\/3.1.1\/jquery.min.js\"><\/script>\n<script src=\"https:\/\/daks2k3a4ib2z.cloudfront.net\/588509aba93e9ed75d02ed68\/js\/knife-fox-playground.7c3e6668d.js\"><\/script>\n\n\n\n<script>\n$(document).ready(function(){\n  $('#slider').fadeIn('slow').delay(200);\n  $(\"#sticker\").sticky({topSpacing:0});\n});\n\n\/\/https:\/\/dribbble.com\/shots\/3581904-HEALTHEX-Day-01\n\n\/\/SMOOTH SCROLL MENU\n$(document).ready(function(){\n  $(\"a\").on('click', function(event) {\n    if (this.hash !== \"\") {  \n      event.preventDefault();\n\n      var hash = this.hash;\n\n      $('html, body').animate({\n        scrollTop: $(hash).offset().top\n      }, 1000, function(){\n        window.location.hash = hash;\n      });\n    }\n  });\n});\n\n\/\/FIXED MENU COLORS\n$(document).ready(function(){\n  $(window).trigger('scroll');\n  $(window).bind('scroll', function () {\n    var pixels = 50; \/\/pixeles abajo\n    if ($(window).scrollTop() > pixels) {\n  $('.nav').addClass('fixed');\n      $('.menu a').css({\"color\":\"#354757\"});\n      $('.logo').css({\"color\":\"#354757\"});\n    } else {\n      $('.nav').removeClass('fixed');\n      $('.menu a').css({\"color\":\"#BABCBD\"});\n      $('.logo').css({\"color\":\"#BABCBD\"});\n    }\n  }); \n}); \n\n\/*\n$(document).ready(function(){\n  $('a[href^=\"#\"]').on('click',function (e){\n    e.preventDefault();\n    var target = this.hash;\n    var $target = $(target);\n    \n    \/\/scroll con hash\n    $('html, body').animate({\n      'scrollTop': $target.offset().top\n    }, 1000, 'swing', function(){\n      window.location.hash = target;\n    });\n    \n   \/* \/\/scroll sin hash\n    $('html, body').animte({\n      'scrollTop': $targer.offset().top\n      }, 1000, 'swing');\n  });\n});*\/\n<\/script>\n\n<style type=\"text\/css\">\n@import url('https:\/\/fonts.googleapis.com\/css2family=Montserrat:wght@300&display=swap');\n\n\n\/*MENU*\/\n.nav{\n  text-align: right;\n  height: 70px;\n  line-height: 70px;\n  position: relative;\n  z-index: 999;\n}\n\n.menu{\n  margin: 0 30px 0 0;\n}\n\n.menu a{\n  clear: right;\n  text-decoration: none;\n  color: #FEFFFF;\n  margin: 0 10px;\n  line-height: 70px;\n  letter-spacing: .9px;\n  text-transform: uppercase;\n  transition: all 250ms ease;\n}\n\n@keyframes strike{\n  0%   { width : 0; }\n  100% { width: 100%; }\n}\n\n.strike {\n  position: relative;\n}\n\n.strike:hover:after {\n  content: ' ';\n  position: absolute;\n  top: 40%;\n  left: 0;\n  width: 100%;\n  height: 2px;\n  background: #FEFFFF;\n  animation-name: strike;\n  animation-duration: 1s;\n  animation-timing-function: ease;\n  animation-iteration-count: infinite;\n}\n\n.menu h5{\n  margin: 0 30px;\n  text-transform: uppercase;\n  float: left;\n  font-weight: 300;\n  font-size: 25px;\n  letter-spacing: 2px;\n  position: relative;\n  z-index: 999;\n  color: #FEFFFF;\n}\n\nlabel{\n  margin: 0 20px 0 0;\n  font-size: 26px;\n  line-height: 70px;\n  display: none;\n  width: 26px;\n  float: right;\n  color: #354757;\n}\n\n#toggle{\n  display: none;\n}\n\n.fixed{\n  background-color: #FEFFFF;\n}\n\n.photo{\n  width: 100%;\n  height: 700px;\n  position: relative;\n  background: url('https:\/\/cdn.shopify.com\/s\/files\/1\/0445\/8047\/0950\/files\/pexels-freitas-junior-6564541.jpg?v=1657210690') center;\n  background-size: cover;\n  overflow: hidden;\n}\n\n.photo-text{\n  min-height: 500px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n\n.overlay{\n  position: absolute;\n  z-index: 1;\n  width: 100%;\n  height: 200vh;\n  top: 0;\n  left: 0;\n  background: rgba(60, 63, 114, .6);\n}\n\n.photo h4{\n  font-size: 80px;\n  text-transform: uppercase;\n  letter-spacing: 1.2px;\n  color: #FEFFFF;\n  margin: 10px;\n  cursor: pointer;\n  position: relative;\n  z-index: 998;\n}\n\n.photo p{\n  width: 60%;\n  text-align: center;\n  letter-spacing: 1.5px;\n  color: #D7DADE;\n  position: relative;\n  z-index: 998;\n}\n\n.content{\n  width: 100%;\n  min-height: 800px;\n  position: relative;\n  z-index: 1;\n}\n\n.content:before{\n  content: '';\n  width: 50%;\n  height: 110px;\n  position: absolute;\n  top: -48px;\n  left: 0;\n  background-color: #FEFFFF;\n  transform: skewY(5.5deg);\/*8*\/\n}\n\n.content:after{\n  content: '';\n  width: 50%;\n  height: 110px;\n  position: absolute;\n  top: -48px;\n  right: 0;\n  background-color: #FEFFFF;\n  transform: skewY(-5.5deg);\/*8*\/\n}\n\n.grand-title{\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  position: relative;\n  z-index: 999;\n  width: 60%;\n  min-height: 100px;\n  padding: 0;\n  margin: 0 auto;\n}\n\n.grand-title h4{\n  text-align: center;\n  font-size: 30px;\n  font-weight: 400;\n  letter-spacing: 1.2px;\n  margin: 30px;\n  color: #354757;\n}\n\n.grand-title h4:after{\n  content: '';\n  display: block; \n  width: 5%;\n  height: 3px;\n  margin: 25px auto;\n  border: 0;\n  background: #E58859;\n}\n\n.text{\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n  margin-top: -10px;\n  position: relative;\n  z-index: 999;\n}\n\n.inner-text{\n   display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-flow: column wrap;\n  padding: 20px;\n  width: 300px;\n  margin: 10px 0 10px 0;\n  transition: all 450ms ease;\n}\n\n.inner-text:hover{\n  cursor: pointer;\n  box-shadow: -1px 6.5px 15px rgba(208, 211, 214, 0.75);\n}\n\n.ic{\n  font-size: 35px;\n  color: #EBA675;\n  transition: all 250ms ease;\n}\n\n.ic:hover{\n opacity: .7;\n}\n\n.inner-text h3{\n  color: #299FFF;\n  text-transform: uppercase;\n  font-weight: 400;\n  letter-spacing: 1.2px;\n}\n\n.inner-text h5{\n  color: #6D85A8;\n  letter-spacing: 1.2px;\n  text-transform: uppercase;\n}\n\n.inner-text p{\n  color: #6D85A8;\n}\n\n.inner-content{\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  min-height: 450px;\n}\n\n.boxy:nth-child(1){\n  width: 50%;\n  min-height: 400px;\n  background: url('https:\/\/cdn.shopify.com\/s\/files\/1\/0445\/8047\/0950\/files\/Gral1roJul55.jpg?v=1657218720') bottom no-repeat;\n  background-size: cover;\n  position: relative;\n  z-index: 999;\n}\n\n.boxy:nth-child(2){\n  width: 50%;\n  min-height: 500px;\n  display: flex;\n  align-items: center;\n}\n\n#slider{\n  overflow: hidden;\n  margin-left: -20px;\n}\n\n#slider figure ul li{\n  width: 20%;\n  float: left;\n  list-style: none;\n  text-align: center;\n}\n\nul li img{\n  border-radius: 50%;\n  padding: 10px;\n}\n\nul li h4{\n  color: #354757;\n  font-weight: 300;\n  font-size: 25px;\n}\n\nul li p{\n  font-size: 20px;\n  width: 80%;\n  margin: 0 auto;\n  color: #6D85A8;\n}\n\n#slider figure{\n  position: relative;\n  width: 500%;\n  margin: 0;\n  left: 0;\n  text-align: left;\n  animation-name: slider;\n    animation-duration: 25s;\n    animation-timing-function: linear;\n    animation-delay: -5s;\n    animation-iteration-count: infinite;\n   \/*animation-direction: alternate;*\/\n}\n\n\/*Portafolio*\/\n.portafolio{\n  width: 90%;\n  max-width: 1400px;\n  margin: 0 auto;\n  margin-top: -35px;\n  margin-bottom: 40px;\n}\n\n.portafolio h4{\n  text-align: center;\n  font-weight: 400;\n  font-size: 40px;\n  color: #354757;\n  letter-spacing: 1.2px;\n}\n\n.portafolio h4:after{\n  content: '';\n  display: block; \n  width: 3%;\n  height: 3px;\n  margin: 20px auto;\n  border: 0;\n  background: #E58859;\n}\n\n.portafolio-container{\n  display: flex;\n  justify-content: space-between;\n}\n\n.portafolio-item{\n  width: 19%;\n  position: relative;\n  overflow: hidden;\n  border-radius: 0em;\n}\n\n.portafolio-item img{\n  width: 100%;\n}\n\n.portafolio-text{\n      position: absolute;\n    bottom: 0;\n    padding: 10px;\n    background: rgb(70 70 70 \/ 70%);\n    color: #ffffff;\n    transform: translateY(100%);\n    transition: all 450ms ease;\n  }\n\n.portafolio-text h5{\n     color: #ffffff;\n    font-size: 18px;\n    text-transform: uppercase;\n    letter-spacing: 1.2px;\n    margin: 0;\n}\n\n.portafolio-text p{\n    text-align: justify;\n    color: #ffffff;\n}\n\n.portafolio-item:hover .portafolio-text{\n  transform: translateY(0);\n}\n\n.portafolio-img{\n  transition: all 450ms ease;\n}\n\n.portafolio-item:hover .portafolio-img{\n  transform: rotate(-5deg) scale(1.15);\n}\n\n\/*FOOTER*\/\n.footer{\n  display: flex;\n  align-items: center;\n  flex-direction: column;\n  min-height: 500px;\n  width: 100%;\n}\n\n.footer h4{\n  font-size: 30px;\n  font-weight: 400;\n  letter-spacing: 1.2px;\n  margin: 30px;\n  color: #354757;\n}\n\n.footer h4:after{\n  content: '';\n  display: block; \n  width: 25%;\n  height: 3px;\n  margin: 20px auto;\n  border: 0;\n  background: #E58859;\n}\n\n.container{\n  width: 80%;\n  max-width: 1200px;\n  margin: 0 auto;\n}\n\n.container *{\n  box-sizing: border-box;\n}\n\n.flex-outer,\n.flex-inner{\n  list-style-type: none;\n  padding: 0;\n}\n\n.flex-outer{\n  max-width: 800px;\n  margin: 0 auto;\n}\n\n.flex-outer li,\n.flex-inner{\n  display: flex;\n  flex-wrap: wrap;\n  align-items: center;\n}\n\n.flex-inner{\n  padding: 0 8px;\n  justify-content: space-between;  \n}\n\n.flex-outer > li:not(:last-child){\n  margin-bottom: 20px;\n}\n\n.flex-outer li label{\n  padding: 8px;\n  font-weight: 300;\n  font-size: 15px;\n  letter-spacing: .09em;\n  text-transform: uppercase;\n}\n\n.flex-outer > li > label{\n  flex: 1 0 120px;\n  max-width: 220px;\n}\n\n.flex-outer > li > label + *,\n.flex-inner{\n  flex: 1 0 220px;\n}\n\n.flex-outer li input:not([type='checkbox']),\n.flex-outer li textarea{\n  padding: 15px;\n  resize: none;\n}\n\n.flex-outer li button{\n  background: 0 0 #FEFFFF;\n  border: 1px solid #6D85A8;\n  border-radius: 3px;\n  color: #6D85A8;\n  font-size: 16px;\n  line-height: inherit;\n  margin: 30px 0;\n  padding: 10px 50px;\n  text-transform: uppercase;\n  transition: all 0.25s ease 0s;\n}\n\n.flex-outer li button:hover,\n.flex-outer li button:active,\n.flex-outer li button:focus {\n\tborder-color: #299FFF;\n\tcolor: #299FFF;\n}\n\n.flex-inner li{\n  width: 100px;\n}\n\n.rect{\n\tborder-color: #6D85A8;\n  border-width: 0 0 1px 0;\n  border-style: none none solid none;\n  box-shadow: none;\n}\n\n.rect:focus{\n\tbox-shadow: none;\n\tborder-color: #60A9F1;\n  outline: none;\n}\n\n.center{\n  display: flex;\n  justify-content: flex-end;\n}\n\n.flex-outer li ::placeholder{\n  font-size: 12px;\n  color: #6D85A8;\n  text-transform: uppercase;\n  font-weight: 400;\n}\n\n.flex-outer li ::-webkit-input-placeholder{\n  font-size: 12px;\n  color: #6D85A8;\n  text-transform: uppercase;\n  font-weight: 400;\n}\n\n.flex-outer li ::-moz-placeholder{\n  font-size: 12px;\n  color: #6D85A8;\n  text-transform: uppercase;\n  font-weight: 400;\n}\n\n.flex-outer li ::-ms-input-placeholder{\n  font-size: 12px;\n  color: #6D85A8;\n  text-transform: uppercase;\n  font-weight: 400;\n}\n\n.flex-outer li ::-moz-placeholder{\n  font-size: 12px;\n  color: #6D85A8;\n  text-transform: uppercase;\n  font-weight: 400;\n}\n\ninput{\n  font-family: 'Raleway', sans-serif;\n}\n\n@media screen and (max-width: 950px){\n  .portafolio-container{\n    flex-flow: column wrap;\n    align-items: center;\n  }\n  \n  .portafolio-item{width: 80%; margin-top: 10px;}\n}\n\n@media screen and (max-width: 950px){\n  .photo p{width: 90%;}\n  .grand-title{width: 90%;}\n  .text{flex-direction: column;}\n  .inner-content{flex-flow: column wrap;}\n  .boxy:nth-child(1),.boxy:nth-child(2){width: 90%;}\/*GENERA PROBLEMA*\/\n  .boxy:nth-child(1){padding: 10px;}\n  #slider{margin-left: -55px;}\n}\n\n@media only screen and (max-width: 600px){\n  label{\n    display: block;\n    cursor: pointer;\n  }\n  .menu{\n    text-align: center;\n    width: 100%;\n    display: none;\n  }\n  .menu a{\n    display: block;\n    border-bottom: 1px solid #EAEAEB;\n    margin: 0;\n    color: #6D85A8;\n  }\n  #toggle:checked + .menu{display: block; background-color: #FEFFFF;}\n}\n\n@media screen and (max-width: 500px){\n  #slider{margin-left: -55px;}\n  .photo-text h4{font-size: 45px;}\n  .inner-text{width: 80%;}\n  \n}\n\n@keyframes slider{\n  0%{left: 0; opacity: 0;}\n  20%{left: 0; opacity: 1;}\n  25%{left: -100%; opacity: .8;}\n  45%{left: -100%; opacity: .8;}\n  50%{left: -200%; opacity: .7;}\n  70%{left: -200%; opacity: .7;}\n  75%{left: -300%; opacity: .6;}\n  95%{left: -400%; opacity: .6;}\n  100%{left: -400%; opacity: 1;}\n}\n<\/style>\n<section class=\"photo\" id=\"inicio\">\n  \n  <div class=\"photo-text\">\n  <h4 data-ix=\"skype\">ICON<\/h4>\n    <p data-ix=\"subtitle-hero-up\">Iluminamos tu vida, <b>iluminamos tu camino<\/b><\/p>\n    <\/div>\n  <div class=\"overlay\"><\/div>\n<\/section>\n<section class=\"content\">\n  <div class=\"grand-title\" id=\"servicio\">\n    <h4 data-ix=\"slowfade-scroll-bigs\">\n    Asesoramos, diseñamos y ejecutamos proyectos personalizados de\niluminación en viviendas, hoteles, tiendas, oficinas, edificios y\nexteriores.<\/h4>\n  <\/div>\n<\/seccion>"
+        "custom_liquid": "<script src=\"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/jquery\/3.1.1\/jquery.min.js\"><\/script>\n<script src=\"https:\/\/daks2k3a4ib2z.cloudfront.net\/588509aba93e9ed75d02ed68\/js\/knife-fox-playground.7c3e6668d.js\"><\/script>\n\n\n\n<script>\n$(document).ready(function(){\n  $('#slider').fadeIn('slow').delay(200);\n  $(\"#sticker\").sticky({topSpacing:0});\n});\n\n\/\/https:\/\/dribbble.com\/shots\/3581904-HEALTHEX-Day-01\n\n\/\/SMOOTH SCROLL MENU\n$(document).ready(function(){\n  $(\"a\").on('click', function(event) {\n    if (this.hash !== \"\") {  \n      event.preventDefault();\n\n      var hash = this.hash;\n\n      $('html, body').animate({\n        scrollTop: $(hash).offset().top\n      }, 1000, function(){\n        window.location.hash = hash;\n      });\n    }\n  });\n});\n\n\/\/FIXED MENU COLORS\n$(document).ready(function(){\n  $(window).trigger('scroll');\n  $(window).bind('scroll', function () {\n    var pixels = 50; \/\/pixeles abajo\n    if ($(window).scrollTop() > pixels) {\n  $('.nav').addClass('fixed');\n      $('.menu a').css({\"color\":\"#354757\"});\n      $('.logo').css({\"color\":\"#354757\"});\n    } else {\n      $('.nav').removeClass('fixed');\n      $('.menu a').css({\"color\":\"#BABCBD\"});\n      $('.logo').css({\"color\":\"#BABCBD\"});\n    }\n  }); \n}); \n\n\/*\n$(document).ready(function(){\n  $('a[href^=\"#\"]').on('click',function (e){\n    e.preventDefault();\n    var target = this.hash;\n    var $target = $(target);\n    \n    \/\/scroll con hash\n    $('html, body').animate({\n      'scrollTop': $target.offset().top\n    }, 1000, 'swing', function(){\n      window.location.hash = target;\n    });\n    \n   \/* \/\/scroll sin hash\n    $('html, body').animte({\n      'scrollTop': $targer.offset().top\n      }, 1000, 'swing');\n  });\n});*\/\n<\/script>\n\n<style type=\"text\/css\">\n@import url('https:\/\/fonts.googleapis.com\/css2family=Montserrat:wght@300&display=swap');\n\n\n\/*MENU*\/\n.nav{\n  text-align: right;\n  height: 70px;\n  line-height: 70px;\n  position: relative;\n  z-index: 999;\n}\n\n.menu{\n  margin: 0 30px 0 0;\n}\n\n.menu a{\n  clear: right;\n  text-decoration: none;\n  color: #FEFFFF;\n  margin: 0 10px;\n  line-height: 70px;\n  letter-spacing: .9px;\n  text-transform: uppercase;\n  transition: all 250ms ease;\n}\n\n@keyframes strike{\n  0%   { width : 0; }\n  100% { width: 100%; }\n}\n\n.strike {\n  position: relative;\n}\n\n.strike:hover:after {\n  content: ' ';\n  position: absolute;\n  top: 40%;\n  left: 0;\n  width: 100%;\n  height: 2px;\n  background: #FEFFFF;\n  animation-name: strike;\n  animation-duration: 1s;\n  animation-timing-function: ease;\n  animation-iteration-count: infinite;\n}\n\n.menu h5{\n  margin: 0 30px;\n  text-transform: uppercase;\n  float: left;\n  font-weight: 300;\n  font-size: 25px;\n  letter-spacing: 2px;\n  position: relative;\n  z-index: 999;\n  color: #FEFFFF;\n}\n\nlabel{\n  margin: 0 20px 0 0;\n  font-size: 26px;\n  line-height: 70px;\n  display: none;\n  width: 26px;\n  float: right;\n  color: #354757;\n}\n\n#toggle{\n  display: none;\n}\n\n.fixed{\n  background-color: #FEFFFF;\n}\n\n.photo{\n  width: 100%;\n  height: 700px;\n  position: relative;\n  background: url('https:\/\/cdn.shopify.com\/s\/files\/1\/0445\/8047\/0950\/files\/pexels-freitas-junior-6564541.jpg?v=1657210690') center;\n  background-size: cover;\n  overflow: hidden;\n}\n\n.photo-text{\n  min-height: 500px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n\n.overlay{\n  position: absolute;\n  z-index: 1;\n  width: 100%;\n  height: 200vh;\n  top: 0;\n  left: 0;\n  background: rgba(60, 63, 114, .6);\n}\n\n.photo h4{\n  font-size: 80px;\n  text-transform: uppercase;\n  letter-spacing: 1.2px;\n  color: #FEFFFF;\n  margin: 10px;\n  cursor: pointer;\n  position: relative;\n  z-index: 998;\n}\n\n.photo p{\n  width: 60%;\n  text-align: center;\n  letter-spacing: 1.5px;\n  color: #D7DADE;\n  position: relative;\n  z-index: 998;\n}\n\n.content{\n  width: 100%;\n    \/*min-height: 800px;*\/\n  position: relative;\n  z-index: 1;\n}\n\n.content:before{\n  content: '';\n  width: 50%;\n  height: 110px;\n  position: absolute;\n  top: -48px;\n  left: 0;\n  background-color: #FEFFFF;\n  transform: skewY(5.5deg);\/*8*\/\n}\n\n.content:after{\n  content: '';\n  width: 50%;\n  height: 110px;\n  position: absolute;\n  top: -48px;\n  right: 0;\n  background-color: #FEFFFF;\n  transform: skewY(-5.5deg);\/*8*\/\n}\n\n.grand-title{\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  position: relative;\n  z-index: 999;\n  width: 60%;\n  min-height: 100px;\n  padding: 0;\n  margin: 0 auto;\n}\n\n.grand-title h4{\n  text-align: center;\n  font-size: 30px;\n  font-weight: 400;\n  letter-spacing: 1.2px;\n  margin: 30px;\n  color: #354757;\n}\n\n.grand-title h4:after{\n  content: '';\n  display: block; \n  width: 5%;\n  height: 3px;\n  margin: 25px auto;\n  border: 0;\n  background: #E58859;\n}\n\n.text{\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  text-align: center;\n  margin-top: -10px;\n  position: relative;\n  z-index: 999;\n}\n\n.inner-text{\n   display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-flow: column wrap;\n  padding: 20px;\n  width: 300px;\n  margin: 10px 0 10px 0;\n  transition: all 450ms ease;\n}\n\n.inner-text:hover{\n  cursor: pointer;\n  box-shadow: -1px 6.5px 15px rgba(208, 211, 214, 0.75);\n}\n\n.ic{\n  font-size: 35px;\n  color: #EBA675;\n  transition: all 250ms ease;\n}\n\n.ic:hover{\n opacity: .7;\n}\n\n.inner-text h3{\n  color: #299FFF;\n  text-transform: uppercase;\n  font-weight: 400;\n  letter-spacing: 1.2px;\n}\n\n.inner-text h5{\n  color: #6D85A8;\n  letter-spacing: 1.2px;\n  text-transform: uppercase;\n}\n\n.inner-text p{\n  color: #6D85A8;\n}\n\n.inner-content{\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  min-height: 450px;\n}\n\n.boxy:nth-child(1){\n  width: 50%;\n  min-height: 400px;\n  background: url('https:\/\/cdn.shopify.com\/s\/files\/1\/0445\/8047\/0950\/files\/Gral1roJul55.jpg?v=1657218720') bottom no-repeat;\n  background-size: cover;\n  position: relative;\n  z-index: 999;\n}\n\n.boxy:nth-child(2){\n  width: 50%;\n  min-height: 500px;\n  display: flex;\n  align-items: center;\n}\n\n#slider{\n  overflow: hidden;\n  margin-left: -20px;\n}\n\n#slider figure ul li{\n  width: 20%;\n  float: left;\n  list-style: none;\n  text-align: center;\n}\n\nul li img{\n  border-radius: 50%;\n  padding: 10px;\n}\n\nul li h4{\n  color: #354757;\n  font-weight: 300;\n  font-size: 25px;\n}\n\nul li p{\n  font-size: 20px;\n  width: 80%;\n  margin: 0 auto;\n  color: #6D85A8;\n}\n\n#slider figure{\n  position: relative;\n  width: 500%;\n  margin: 0;\n  left: 0;\n  text-align: left;\n  animation-name: slider;\n    animation-duration: 25s;\n    animation-timing-function: linear;\n    animation-delay: -5s;\n    animation-iteration-count: infinite;\n   \/*animation-direction: alternate;*\/\n}\n\n\/*Portafolio*\/\n.portafolio{\n  width: 90%;\n  max-width: 1400px;\n  margin: 0 auto;\n  margin-top: -35px;\n  margin-bottom: 40px;\n}\n\n.portafolio h4{\n  text-align: center;\n  font-weight: 400;\n  font-size: 40px;\n  color: #354757;\n  letter-spacing: 1.2px;\n}\n\n.portafolio h4:after{\n  content: '';\n  display: block; \n  width: 3%;\n  height: 3px;\n  margin: 20px auto;\n  border: 0;\n  background: #E58859;\n}\n\n.portafolio-container{\n  display: flex;\n  justify-content: space-between;\n}\n\n.portafolio-item{\n  width: 19%;\n  position: relative;\n  overflow: hidden;\n  border-radius: 0em;\n}\n\n.portafolio-item img{\n  width: 100%;\n}\n\n.portafolio-text{\n      position: absolute;\n    bottom: 0;\n    padding: 10px;\n    background: rgb(70 70 70 \/ 70%);\n    color: #ffffff;\n    transform: translateY(100%);\n    transition: all 450ms ease;\n  }\n\n.portafolio-text h5{\n     color: #ffffff;\n    font-size: 18px;\n    text-transform: uppercase;\n    letter-spacing: 1.2px;\n    margin: 0;\n}\n\n.portafolio-text p{\n    text-align: justify;\n    color: #ffffff;\n}\n\n.portafolio-item:hover .portafolio-text{\n  transform: translateY(0);\n}\n\n.portafolio-img{\n  transition: all 450ms ease;\n}\n\n.portafolio-item:hover .portafolio-img{\n  transform: rotate(-5deg) scale(1.15);\n}\n\n\/*FOOTER*\/\n.footer{\n  display: flex;\n  align-items: center;\n  flex-direction: column;\n  min-height: 500px;\n  width: 100%;\n}\n\n.footer h4{\n  font-size: 30px;\n  font-weight: 400;\n  letter-spacing: 1.2px;\n  margin: 30px;\n  color: #354757;\n}\n\n.footer h4:after{\n  content: '';\n  display: block; \n  width: 25%;\n  height: 3px;\n  margin: 20px auto;\n  border: 0;\n  background: #E58859;\n}\n\n.container{\n  width: 80%;\n  max-width: 1200px;\n  margin: 0 auto;\n}\n\n.container *{\n  box-sizing: border-box;\n}\n\n.flex-outer,\n.flex-inner{\n  list-style-type: none;\n  padding: 0;\n}\n\n.flex-outer{\n  max-width: 800px;\n  margin: 0 auto;\n}\n\n.flex-outer li,\n.flex-inner{\n  display: flex;\n  flex-wrap: wrap;\n  align-items: center;\n}\n\n.flex-inner{\n  padding: 0 8px;\n  justify-content: space-between;  \n}\n\n.flex-outer > li:not(:last-child){\n  margin-bottom: 20px;\n}\n\n.flex-outer li label{\n  padding: 8px;\n  font-weight: 300;\n  font-size: 15px;\n  letter-spacing: .09em;\n  text-transform: uppercase;\n}\n\n.flex-outer > li > label{\n  flex: 1 0 120px;\n  max-width: 220px;\n}\n\n.flex-outer > li > label + *,\n.flex-inner{\n  flex: 1 0 220px;\n}\n\n.flex-outer li input:not([type='checkbox']),\n.flex-outer li textarea{\n  padding: 15px;\n  resize: none;\n}\n\n.flex-outer li button{\n  background: 0 0 #FEFFFF;\n  border: 1px solid #6D85A8;\n  border-radius: 3px;\n  color: #6D85A8;\n  font-size: 16px;\n  line-height: inherit;\n  margin: 30px 0;\n  padding: 10px 50px;\n  text-transform: uppercase;\n  transition: all 0.25s ease 0s;\n}\n\n.flex-outer li button:hover,\n.flex-outer li button:active,\n.flex-outer li button:focus {\n\tborder-color: #299FFF;\n\tcolor: #299FFF;\n}\n\n.flex-inner li{\n  width: 100px;\n}\n\n.rect{\n\tborder-color: #6D85A8;\n  border-width: 0 0 1px 0;\n  border-style: none none solid none;\n  box-shadow: none;\n}\n\n.rect:focus{\n\tbox-shadow: none;\n\tborder-color: #60A9F1;\n  outline: none;\n}\n\n.center{\n  display: flex;\n  justify-content: flex-end;\n}\n\n.flex-outer li ::placeholder{\n  font-size: 12px;\n  color: #6D85A8;\n  text-transform: uppercase;\n  font-weight: 400;\n}\n\n.flex-outer li ::-webkit-input-placeholder{\n  font-size: 12px;\n  color: #6D85A8;\n  text-transform: uppercase;\n  font-weight: 400;\n}\n\n.flex-outer li ::-moz-placeholder{\n  font-size: 12px;\n  color: #6D85A8;\n  text-transform: uppercase;\n  font-weight: 400;\n}\n\n.flex-outer li ::-ms-input-placeholder{\n  font-size: 12px;\n  color: #6D85A8;\n  text-transform: uppercase;\n  font-weight: 400;\n}\n\n.flex-outer li ::-moz-placeholder{\n  font-size: 12px;\n  color: #6D85A8;\n  text-transform: uppercase;\n  font-weight: 400;\n}\n\ninput{\n  font-family: 'Raleway', sans-serif;\n}\n\n@media screen and (max-width: 950px){\n  .portafolio-container{\n    flex-flow: column wrap;\n    align-items: center;\n  }\n  \n  .portafolio-item{width: 80%; margin-top: 10px;}\n}\n\n@media screen and (max-width: 950px){\n  .photo p{width: 90%;}\n  .grand-title{width: 90%;}\n  .text{flex-direction: column;}\n  .inner-content{flex-flow: column wrap;}\n  .boxy:nth-child(1),.boxy:nth-child(2){width: 90%;}\/*GENERA PROBLEMA*\/\n  .boxy:nth-child(1){padding: 10px;}\n  #slider{margin-left: -55px;}\n}\n\n@media only screen and (max-width: 600px){\n  label{\n    display: block;\n    cursor: pointer;\n  }\n  .menu{\n    text-align: center;\n    width: 100%;\n    display: none;\n  }\n  .menu a{\n    display: block;\n    border-bottom: 1px solid #EAEAEB;\n    margin: 0;\n    color: #6D85A8;\n  }\n  #toggle:checked + .menu{display: block; background-color: #FEFFFF;}\n}\n\n@media screen and (max-width: 500px){\n  #slider{margin-left: -55px;}\n  .photo-text h4{font-size: 45px;}\n  .inner-text{width: 80%;}\n  \n}\n\n@keyframes slider{\n  0%{left: 0; opacity: 0;}\n  20%{left: 0; opacity: 1;}\n  25%{left: -100%; opacity: .8;}\n  45%{left: -100%; opacity: .8;}\n  50%{left: -200%; opacity: .7;}\n  70%{left: -200%; opacity: .7;}\n  75%{left: -300%; opacity: .6;}\n  95%{left: -400%; opacity: .6;}\n  100%{left: -400%; opacity: 1;}\n}\n<\/style>\n<section class=\"photo\" id=\"inicio\">\n  \n  <div class=\"photo-text\">\n  <h4 data-ix=\"skype\">ICON<\/h4>\n    <p data-ix=\"subtitle-hero-up\">Iluminamos tu vida, <b>iluminamos tu camino<\/b><\/p>\n    <\/div>\n  <div class=\"overlay\"><\/div>\n<\/section>\n<section class=\"content\">\n  <div class=\"grand-title\" id=\"servicio\">\n    <h4 data-ix=\"slowfade-scroll-bigs\">\n    Asesoramos, diseñamos y ejecutamos proyectos personalizados de\niluminación en viviendas, hoteles, tiendas, oficinas, edificios y\nexteriores.<\/h4>\n  <\/div>\n\n<\/section>"
       }
     },
     "162981928149fa3b68": {
@@ -98,45 +98,82 @@
         "adapt_height_first_image": false
       }
     },
-    "rich_text": {
-      "type": "rich-text",
+    "16575589032603d604": {
+      "type": "image-with-text",
       "blocks": {
-        "heading": {
+        "165755890377c47fd0-0": {
           "type": "heading",
           "settings": {
-            "heading": "Nosotros",
-            "heading_size": "h1"
+            "heading": "Visión"
           }
         },
-        "text": {
+        "165755890377c47fd0-1": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Asesoramos, diseñamos y ejecutamos proyectos personalizados de <br\/>iluminación en viviendas, hoteles, tiendas, oficinas, edificios y <br\/>exteriores.<\/strong><\/p>"
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "165755890377c47fd0-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
           }
         }
       },
       "block_order": [
-        "heading",
-        "text"
+        "165755890377c47fd0-0",
+        "165755890377c47fd0-1",
+        "165755890377c47fd0-2"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/pexels-viento-wang-1126754.jpg",
+        "height": "adapt",
         "color_scheme": "background-1",
-        "full_width": true
+        "layout": "text_first"
       }
     },
-    "featured_products": {
-      "type": "featured-collection",
+    "1657555432da320a65": {
+      "type": "image-with-text",
+      "blocks": {
+        "1657555432b1359123-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Misión"
+          }
+        },
+        "1657555432b1359123-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ofrecemos productos innovadores para que nuestros clientes<br\/>experimenten la sensación de confort y tranquilidad, dándole<br\/>soluciones prácticas a sus necesidades.<\/p>"
+          }
+        },
+        "1657555432b1359123-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1657555432b1359123-0",
+        "1657555432b1359123-1",
+        "1657555432b1359123-2"
+      ],
       "settings": {
-        "title": "",
-        "collection": "all",
-        "products_to_show": 4,
-        "show_view_all": true,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "add_image_padding": true,
-        "show_image_outline": true,
-        "show_vendor": false
+        "image": "shopify:\/\/shop_images\/pexels-max-vakhtbovych-6969824.jpg",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first"
+      }
+    },
+    "165755941147b9b1fd": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<section class=\"portafolio\" id=\"trabajo\">\n    <h4 data-ix=\"slowfade-scroll-bigs\">Líneas de Productos<\/h4>\n    <div class=\"portafolio-container\">\n      <section class=\"portafolio-item\">\n      <a href=\"https:\/\/www.icon-mx.com\/collections\/ajustable\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0445\/8047\/0950\/files\/ICDOWAJ20W-4.jpg?v=1657217873\" alt=\"\" class=\"portafolio-img\" \/>\n        \n        <section class=\"portafolio-text\">\n          <h5>DOWNLIGHTS<\/h5>\n          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus doloremque, error nostrum tempora sapiente corporis.<\/p>\n        <\/section>\n        <\/a>\n      <\/section>\n      <section class=\"portafolio-item\">\n         <a href=\"https:\/\/www.icon-mx.com\/collections\/mr16\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0445\/8047\/0950\/files\/ICMR16LED7W-4.jpg?v=1657217873\" alt=\"\" class=\"portafolio-img\"\/>\n        <section class=\"portafolio-text\">\n          <h5>LÁMPARAS DE ACENTO<\/h5>\n          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus doloremque, error nostrum tempora sapiente corporis.<\/p>\n        <\/section>\n        <\/a>\n      <\/section>\n      <section class=\"portafolio-item\">\n         <a href=\"https:\/\/www.icon-mx.com\/collections\/extruido-de-aluminio\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0445\/8047\/0950\/files\/ICT1-20W-4.jpg?v=1657217873\" alt=\"\" class=\"portafolio-img\"\/>\n        <section class=\"portafolio-text\">\n          <h5>ALTA POTENCIA<\/h5>\n          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus doloremque, error nostrum tempora sapiente corporis.<\/p>\n        <\/section>\n        <\/a>\n      <\/section>\n      <section class=\"portafolio-item\">\n         <a href=\"https:\/\/www.icon-mx.com\/collections\/bulbo-domestico\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0445\/8047\/0950\/files\/ICLED7W-4.jpg?v=1657217873\"\/>\n        <section class=\"portafolio-text\">\n          <h5>BOMBILLAS<\/h5>\n          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus doloremque, error nostrum tempora sapiente corporis.<\/p>\n        <\/section>\n        <\/a>\n      <\/section>\n      <section class=\"portafolio-item\">\n         <a href=\"https:\/\/www.icon-mx.com\/collections\/ecoicon\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0445\/8047\/0950\/files\/ICLEDE9W-4.jpg?v=1657217873\" alt=\"\" class=\"portafolio-img\"\/>\n        <section class=\"portafolio-text\">\n          <h5>BOMBILLAS ECO<\/h5>\n          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus doloremque, error nostrum tempora sapiente corporis.<\/p>\n        <\/section>\n        <\/a>\n      <\/section>\n    <\/div>\n  <\/section>"
       }
     },
     "video": {
@@ -148,56 +185,15 @@
         "description": "Icon Iluminación",
         "full_width": false
       }
-    },
-    "multi_column": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
-          }
-        },
-        "column2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
-      "settings": {
-        "title": "",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false
-      }
     }
   },
   "order": [
     "16572074668ade563d",
     "162981928149fa3b68",
     "162974455442c609fa",
-    "rich_text",
-    "featured_products",
-    "video",
-    "multi_column"
+    "16575589032603d604",
+    "1657555432da320a65",
+    "165755941147b9b1fd",
+    "video"
   ]
 }
