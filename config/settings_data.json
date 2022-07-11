@@ -47,26 +47,27 @@
           "footer-0": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
+              "heading": "ENLACES DE INTERÉS",
               "menu": "footer"
             }
           },
-          "footer-1": {
-            "type": "text",
+          "56be3f2e-8eac-4ee0-8988-1b9ae60c33a9": {
+            "type": "image",
             "settings": {
-              "heading": "Heading",
-              "subtext": "<p>Share store details, promotions, or brand content with your customers.<\/p>"
+              "image": "shopify:\/\/shop_images\/400x100px-icon.png",
+              "image_width": 200,
+              "alignment": ""
             }
           }
         },
         "block_order": [
           "footer-0",
-          "footer-1"
+          "56be3f2e-8eac-4ee0-8988-1b9ae60c33a9"
         ],
         "settings": {
           "color_scheme": "accent-2",
           "newsletter_enable": true,
-          "newsletter_heading": "Subscribe to our emails",
+          "newsletter_heading": "Suscríbete a nuestro boletín",
           "show_social": false,
           "enable_country_selector": true,
           "enable_language_selector": true,
